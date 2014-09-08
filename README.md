@@ -10,3 +10,5 @@ http://portfolio.newschool.edu/mfadtlab/
 John is not hacking the syllabus. Class in ....
 
 Who is John?
+
+༼ つ ◕_◕ ༽つ 
