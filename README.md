@@ -8,3 +8,5 @@ This course is an introduction to various approaches and platforms for creative 
 http://portfolio.newschool.edu/mfadtlab/
 
 John is not hacking the syllabus. Class in ....
+
+Who is John?
