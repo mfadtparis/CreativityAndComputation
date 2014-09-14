@@ -1,0 +1,13 @@
+// Homework: creating shapes and patterns
+
+size(500,500);
+
+for (int i = 0; i < width; i+=10){
+for (int j = 0; j < height; j+=10){
+  
+  fill(1, 1+50, i+60);
+  triangle(i,j, 0, 0, 1000, 1000);
+
+  
+}
+}
