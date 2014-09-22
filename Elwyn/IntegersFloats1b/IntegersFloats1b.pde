@@ -1,15 +1,7 @@
-/**
- * Integers Floats. 
- * 
- * Integers and floats are two different kinds of numerical data. 
- * An integer (more commonly called an int) is a number without 
- * a decimal point. A float is a floating-point number, which means 
- * it is a number that has a decimal place. Floats are used when
- * more precision is needed. 
- */
- 
-int a = 0;      // Create a variable "a" of the datatype "int"
-float b = 0.0;  // Create a variable "b" of the datatype "float"
+
+
+int a = 0;
+float b = 0.0;
 int c = 0;
 float d = 0.0;
 int e = 0;
@@ -23,10 +15,7 @@ void setup() {
 
 void draw() {
   background(185, 250, 200);
-  //(50, 0, 50); blackish
-  //(250, 250, 100); yellow
-  //(185, 250, 200); mint
-  
+
   a = a + 2;
   //cobalt
   b = b + 2.5;
@@ -39,42 +28,43 @@ void draw() {
   //fuschia
   f = f + 4.5;
   //fuschia
-  
+
+  stroke(61, 20, 247);
+  //cobalt
   line(a, 0, 2/a, height);
   stroke(61, 20, 247);
   //cobalt
   line(b, 0, 2/b, height);
-  stroke(61, 20, 247);
-  //cobalt
+  stroke(13, 165, 191);
+  //teal
   line(c, 0, 2/c, height);
   stroke(13, 165, 191);
   //teal
   line(d, 0, 2/d, height);
-  stroke(13, 165, 191);
-  //teal
+  stroke(193, 31, 183);
+  //fuschia
   line(e, 0, 2/e, height);
   stroke(193, 31, 183);
   //fuschia
   line(f, 0, 2/f, height);
-    stroke(193, 31, 183);
-  //fuschia
-  
-  if(a > width) {
+
+
+  if (a > width) {
     a = 0;
   }
-  if(b > width) {
+  if (b > width) {
     b = 0;
   }
-  if(c > width) {
+  if (c > width) {
     c = 0;
   }
-  if(d > width) {
+  if (d > width) {
     d = 0;
   }
-   if(e > width) {
+  if (e > width) {
     e = 0;
   }
-   if(f > width) {
+  if (f > width) {
     f = 0;
   }
 }

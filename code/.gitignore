@@ -1,0 +1,21 @@
+SharedData/*
+SharedData2013/*
+
+.svn
+.hg
+.cvs
+
+# osx
+*.app
+*.mode1v3
+*.pbxuser
+.DS_Store
+build/
+xcuserdata/
+DerivedData/
+project.xcworkspace
+
+# vs2010
+ipch/
+obj/
+*.sdf

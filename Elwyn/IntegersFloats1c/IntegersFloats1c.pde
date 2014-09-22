@@ -1,15 +1,7 @@
-/**
- * Integers Floats. 
- * 
- * Integers and floats are two different kinds of numerical data. 
- * An integer (more commonly called an int) is a number without 
- * a decimal point. A float is a floating-point number, which means 
- * it is a number that has a decimal place. Floats are used when
- * more precision is needed. 
- */
+
  
-int a = 0;      // Create a variable "a" of the datatype "int"
-float b = 0.0;  // Create a variable "b" of the datatype "float"
+int a = 0;
+float b = 0.0;
 int c = 0;
 float d = 0.0;
 int e = 0;
@@ -29,7 +21,7 @@ void draw() {
   c = c + 2;
   d = d + 2.5;
   e = e + 3;
-  f = f + 2.5;
+  f = f + 2.8;
   
   stroke(61, 20, 247);
   //cobalt
