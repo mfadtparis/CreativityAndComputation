@@ -1,5 +1,3 @@
-SharedData/*
-SharedData2013/*
 
 .svn
 .hg
@@ -9,7 +7,7 @@ SharedData2013/*
 *.app
 *.mode1v3
 *.pbxuser
-.DS_Store
+*.DS_Store
 build/
 xcuserdata/
 DerivedData/
