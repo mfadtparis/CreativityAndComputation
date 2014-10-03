@@ -6,19 +6,22 @@ OpenCV opencv;
 PImage bg;
 boolean takeSnapshot = false;
 
+//resolution of video file
 int movieW = 640;
 int movieH = 426;
 
+//variables to sav center of bounding box
 float centerX = 0;
 float centerY = 0;
 
 void setup() {
 
   size(movieW, movieH, P2D);
-
+// initialize video
   video = new Movie(this, "bright.mov");
   video.play(); 
 
+//init open cv object
   opencv = new OpenCV(this, movieW, movieH);
   bg = createImage(movieW, movieH, RGB);
 }
@@ -39,7 +42,7 @@ void draw() {
   opencv.erode();
   opencv.dilate();
 
-
+// contours
   ArrayList<Contour>contours = opencv.findContours(false, true);
 
   // draw the first contour only which will be the largest
