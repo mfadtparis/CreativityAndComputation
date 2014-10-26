@@ -1,0 +1,1 @@
+These are examples I practiced with for my first midterm attempt (last week).
