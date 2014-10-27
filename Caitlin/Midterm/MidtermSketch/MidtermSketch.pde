@@ -6,6 +6,7 @@ Capture cam;
 Serial myPort;
 
 int count = 0;
+int temp = 0;
 
 int sensor0 = 0;
 int sensor1 = 0;
@@ -49,18 +50,28 @@ void draw() {
   if (cam.available() == true) {
     cam.read();
   }
-}
+ 
+ count = temp % 3;
+  
+  switch(count){
+    case 0:
+      pixelate();
+      break;
+    case 1:
+      zoomblur();
+      break;
+    case 2:
+      fade();
+      break;
+  }
+  
+  println(count);
+  }
+     
 
 void keyPressed(){
-  if(key=='p'){
-    pixelate();
-  }
-  if(key=='f'){
-    fade();
-  }
-  if (key=='z'){
-    zoomblur();
-  }
+ temp ++;
+ 
 }
   
 
@@ -112,6 +123,7 @@ void zoomblur(){
   //set(0, 0, cam);
   float blur = map(sensor0,0,1023,0,25);
   filter(BLUR, blur);
+  imageMode(CORNER);
 }
 
 void fade(){
