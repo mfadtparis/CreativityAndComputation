@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+		// hide paragraph at start
+	$("#madlib").hide();
+
+	$("#button").click(function(){
+		// change text in span by id:
+		// 	- get text from the input field using val()
+		var inputText = $("#Input1").val();
+		var inputText2 = $("#Input2").val();
+		var inputText3 = $("#Input3").val();
+
+		// 	- set the text in span using text()
+		$("#noun").text(inputText);
+		$("#noun2").text(inputText2);
+		$("#bodypart").text(inputText3)
+
+		// show paragraph
+		$("#madlib").show();
+
+	// reset madlib after button click
+	
+
+	});
+});
+
+
+</script>
+</head>
+
+
+<body>
+	<input placeHolder="noun" id="Input1"></input>
+	<p><input placeHolder="noun" id="Input2"></input></p>
+	<p><input placeHolder="body part" id="Input3"></input></p>
+
+	<button id="button">Click Here</button>
+
+	<p id="madlib">When I see a <span id="noun"></span> next to a <span id="noun2"></span>, I want to put it in my <span id="bodypart"></span>.
+	
+</body>
+
+</html>
