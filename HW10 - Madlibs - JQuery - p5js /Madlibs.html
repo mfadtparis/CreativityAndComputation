@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>madlibs: urgent request</title>
+	<style>
+	table	{text-align: center; padding: 10px;}
+	.words	{font-style: italic; margin-bottom: 35px;}
+
+	</style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	/// hide the paragraph at start
+	$("#madLibText").hide();
+	$("#reset").hide();
+	$("#PressMe").click(function(){
+		//use toggle funciton to hide/show the text
+			var t1 = $("#in1").val();
+			$("#t1").text(t1);
+			var t2 = $("#in2").val();
+			$("#t2").text(t2);
+			var t3 = $("#in3").val();
+			$("#t3").text(t3);
+			var t4 = $("#in4").val();
+			$("#t4").text(t4);
+			var t5 = $("#in5").val();
+			$("#t5").text(t5);
+			var t6 = $("#in6").val();
+			$("#t6").text(t6);
+			var t7 = $("#in7").val();
+			$("#t7").text(t7);
+			var t8 = $("#in8").val();
+			$("#t8").text(t8);
+			var t9 = $("#in9").val();
+			$("#t9").text(t9);
+			var t10 = $("#in10").val();
+			$("#t10").text(t10);
+			var t11 = $("#in11").val();
+			$("#t11").text(t11);
+			var t12 = $("#in12").val();
+			$("#t12").text(t12);
+
+
+			$("#input").hide();
+			$("#madLibText").show();
+			$("#reset").show();
+
+		});
+	$("#reset").click(function(){
+		//clear input boxes
+		$("#madLibText").hide();
+		$("#input").show();
+		$("#reset").hide();
+		$("#in1").val("");
+		$("#in2").val("");
+		$("#in3").val("");
+		$("#in5").val("");
+		$("#in6").val("");
+		$("#in7").val("");
+		$("#in8").val("");
+		$("#in9").val("");
+		$("#in10").val("");
+		$("#in11").val("");
+		$("#in12").val("");
+	});
+});
+</script>
+</head>
+
+<body>
+
+<table id="input">
+	<tr>
+		<td colspan=4>
+			<h1> Let's Play MadLibs!! </h1>
+		</td>
+	</tr>
+<!-- input row 1 -->
+<tr>
+<td>
+<input id="in1" type="text"></input> 
+</td>
+<td>
+<input id="in2" type="text"></input> 
+</td>
+<td>
+<input id="in3" type="text"></input> 
+</td>
+<td>
+<input id="in4" type="text"></input> 
+</td>
+</tr>
+<!-- label row 1 -->
+<tr class="words">
+<td>
+	Greeting
+</td>
+<td>
+	Adjective
+</td>
+<td>
+	Place
+</td>
+<td>
+	Event
+</td>
+</tr>
+<!-- input row 2 -->
+<tr>
+<td>
+<input id="in5" type="text"></input> 
+</td>
+<td>
+<input id="in6" type="text"></input> 
+</td>
+<td>
+<input id="in7" type="text"></input> 
+</td>
+<td>
+<input id="in8" type="text"></input> 
+</td>
+</tr>
+<!-- label row 2 -->
+<tr class="words">
+<td>
+	Noun (Singular)
+</td>
+<td>
+	Noun (Plural)
+</td>
+<td>
+	Noun (Singular)
+</td>
+<td>
+	Number
+</td>
+</tr>
+<!-- input row 3 -->
+<tr>
+<td>
+<input id="in9" type="text"></input> 
+</td>
+<td>
+<input id="in10" type="text"></input> 
+</td>
+<td>
+<input id="in11" type="text"></input> 
+</td>
+<td>
+<input id="in12" type="text"></input> 
+</td>
+</tr>
+<!-- label row 3 -->
+<tr class="words">
+<td>
+	Verb
+</td>
+<td>
+	Noun (Plural)
+</td>
+<td>
+	Noun (Singular)
+</td>
+<td>
+	Noun (Singular)
+</td>
+</tr>
+<tr>
+<td colspan=4>
+	<br>
+		<button id="PressMe">Play Mad Libs</button>
+</td>
+</tr>
+</table>
+
+
+
+<p id="madLibText" style="width:600px; margin-left:50px">
+<span id="t1"></span>, <br><br>
+How are you doing? hope all is <span id="t2"></span> with you, i am sorry that i didn't inform you about my traveling to <span id="t3"></span> for a <span id="t4"></span>. <br><br>
+I need a favor from you as soon as you recieve this e-mail because i misplaced my <span id="t5"></span> on my way to the hotel where my money, and other valuable <span id="t6"></span> were kept, i will like you to assist me with a <span id="t7"></span> urgently. I will be needing the sum of $<span id="t8"></span> to sort-out my hotel bills and get myself back home. <br><br>
+I will appreciate whatever you can afford to help me with, i'll pay you back as soon as i <span id="t9"></span>. Kindly let me know if you can be of help? so that i can send you the <span id="t10"></span> to use when sending the <span id="t11"></span> through western union. <br><br>
+Your <span id="t12"></span> will be greatly appreciated.
+</p>
+
+<button id="reset" style="margin-left:310px">Reset</button>
+
+</body>
+</html>
