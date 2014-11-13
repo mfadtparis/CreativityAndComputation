@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>Maaad Libs!</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="css/foundation.css" />
+
+
+<script>
+
+$(document).ready(function(){
+	$("#madLibtext").hide();
+	$("#clear").hide();
+	$("#done").click( function(){
+		var w1 = $("#in1").val();
+		$("#w1").text(w1);
+		var w2 = $("#in2").val();
+		$("#w2").text(w2);
+		var w3 = $("#in3").val();
+		$("#w3").text(w3);
+		var w4 = $("#in4").val();
+		$("#w4").text(w4);
+		var w5 = $("#in5").val();
+		$("#w5").text(w5);
+		var w6 = $("#in6").val();
+		$("#w6").text(w6);
+		var w7 = $("#in7").val();
+		$("#w7").text(w7);
+		var w8 = $("#in8").val();
+		$("#w8").text(w8);
+		var w9 = $("#in9").val();
+		$("#w9").text(w9);
+		var w10 = $("#in10").val();
+		$("#w10").text(w10);
+
+		$("#input").hide();
+		$("#madLibtext").show();
+		$("#clear").show();
+
+
+		});
+
+	$("#clear").click(function(){
+		$("#madLibtext").hide();
+		$("#input").show();
+		$("#clear").hide();
+		$("#in1").val("");
+		$("#in2").val("");
+		$("#in3").val("");
+		$("#in4").val("");
+		$("#in5").val("");
+		$("#in6").val("");
+		$("#in7").val("");
+		$("#in8").val("");
+		$("#in9").val("");
+		$("#in10").val("");
+
+	});
+});
+</script>
+</head>
+
+<body>
+	<div class="row">
+		 <div class="large-4 medium-4 columns">
+		     <div class="callout panel">
+
+			<h1><img src="http://media.giphy.com/media/m7y2uwgclFzc4/giphy.gif" alt="Family Banana"></h1>
+
+
+<p><input placeHolder="color" id="in1" type="text"></input></p>
+<p><input placeHolder="noun" id="in2" type="text"></input></p>
+<p><input placeHolder="food" id="in3" type="text"></input></p>
+<p><input placeHolder="adjective" id="in4" type="text"></input></p>
+<p><input placeHolder="adjective" id="in5" type="text"></input></p>
+<p><input placeHolder="number" id="in6" type="text"></input></p>
+<p><input placeHolder="noun" id="in7" type="text"></input></p>
+<p><input placeHolder="verb" id="in8" type="text"></input></p>
+<p><input placeHolder="verb" id="in9" type="text"></input></p>
+<p><input placeHolder="noun" id="in10" type="text"></input></p>
+
+
+
+<a href="#"><button id="done" class="small round button">done</button></a>
+
+	</div>
+</div>
+
+	<div class="row 2">
+          <div class="large-6 medium-6 columns">
+
+
+
+<br><br><br><br><br><br><br><br><br><p id="madLibtext">1. Select the type of bread you'd like to use. Many prefer the taste of <span id="w1"></span> bread, while others prefer <span id="w2"></span> because it is healthy.<br><br>2. Choose the flavor of jam/jelly. I personally prefer<span id="w3"></span> jam but you can use whatever you want.<br><br>3. Choose the type of peanut butter - either<span id="w4"></span> or<span id="w5"></span>.<br><br>4. Take out <span id="w6"></span> slice(s) of bread. However many you happen to be hungry for. <br><br>5. Use a <span id="w7"></span> to <span id="w8"></span> the jam all over on the bread.<br><br>6. Now <span id ="w9"></span> the peanut butter on the other piece of bread.<br><br>7. Put them together, and you have your very own PB&J <span id="w10"></span></p>
+
+<a href="#"><button id="clear" class="small round button">again, again!</button></a>
+
+		</div>
+	</div>
+</body>
+</html>
