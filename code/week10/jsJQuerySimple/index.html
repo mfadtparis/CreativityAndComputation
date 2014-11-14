@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<style>
+.special{
+	color: green;
+}
+</style>
+
+<script>
+$(document).ready(function(){
+	jQuery("div").addClass("special");
+
+	$("#myButton").click(function(){
+		$("#Hello").toggle();
+	});
+});
+
+</script>
+
+
+</head>
+
+<body>
+	<button id="myButton">click me</button>		
+	<div id="Hello">hello world</div>
+
+</body>
+
+</html>

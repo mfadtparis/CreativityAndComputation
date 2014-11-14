@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+		var url= "https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=bd48f728c5fd32a23cf3fdd7f2ba8fcf&text=cat&per_page=10&format=json&nojsoncallback=1";
+		
+		$.getJSON( url, function( data ) {
+			for(i = 0; i < 10; i++){
+				var imgUrl = "https://farm"+data.photos.photo[i].farm+".staticflickr.com/"+data.photos.photo[i].server+"/"+data.photos.photo[i].id+"_"+data.photos.photo[i].secret+".jpg";
+				$("#info").append("<img src='"+imgUrl+"'/>");
+			}
+		});
+});
+</script>
+</head>
+<body>
+<p id="info"></p>
+</body>
+</html>

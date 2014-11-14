@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("button").click(function(){
+		
+		$.getJSON( "http://api.openweathermap.org/data/2.5/weather?q=Paris,France", function( data ) {
+				console.log(data.weather[0].description);
+				$("#info").text(data.weather[0].main);
+
+		});
+	
+	});
+	
+});
+</script>
+</head>
+<body>
+
+<button>Send an HTTP GET request to openweathermap</button>
+<p>Current weather in Paris:</p>
+<p id="info"></p>
+</body>
+</html>

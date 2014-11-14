@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<style>
+
+</style>
+
+<script>
+$(document).ready(function(){
+	
+	$("#madLib").hide();
+
+	$("#Done").click(function(){
+		var total = $("input").length;
+		for(i=0;i<total;i++){
+			$(".holder").eq(i).text( $("input").eq(i).val() );
+		}
+		console.log(total);
+		$("#madLib").show();
+	});
+});
+
+</script>
+
+<style>
+li{
+	padding-bottom:5px;
+}
+</style>
+
+</head>
+
+<body>
+	<p>Mad Lib!</p>
+	<ul style="list-style-type:none;padding:0">
+	<li><input type="text" placeholder="adjective"></input></li>
+	<li><input type="text" placeholder="verb (-ing)"></input></li>
+	<li><input type="text" placeholder="noun"></input></li>
+
+	</ul>
+	<button id="Done">Done</button>
+
+	<p id="madLib">
+	Today is a <span class="holder"></span> day. I want to go <span class="holder"></span> with a <span class="holder"></span>!
+	</p>
+</body>
+
+</html>

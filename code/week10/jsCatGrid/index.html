@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<style>
+.cat{
+	width: 100px;
+	height: 100px;
+	float: left;
+	background-color: purple;
+	margin: 2px;
+}
+
+img{
+	width:100%;
+}
+</style>
+
+<script>
+$(document).ready(function(){
+	
+	$("img").hide();
+
+	$("div.cat").hover(function(){
+		$(this).children().toggle();
+		if($(this).children().is(":visible") ){
+			$(this).css("background-color","white");
+		}else{
+			$(this).css("background-color","purple");
+		}
+	});
+
+	$("div.cat").click(function(){
+		$(this).children().animate({
+			opacity: 0.0,
+		}, 2000, function() {
+			// Animation complete.
+		});
+
+	});
+
+});
+
+</script>
+
+
+
+</head>
+
+<body>
+	<div id="main" style="width:320px;margin:auto;">
+	<div class="cat"><img src="cat1.jpg" /></div>
+	<div class="cat"><img src="cat2.jpg"/></div>
+	<div class="cat"><img src="cat3.jpg"/></div>
+	<div class="cat"><img src="cat4.jpg"/></div>
+	<div class="cat"><img src="cat5.jpg"/></div>
+	<div class="cat"><img src="cat6.jpg"/></div>
+	<div class="cat"><img src="cat7.jpg"/></div>
+	<div class="cat"><img src="cat8.jpg"/></div>
+	<div class="cat"><img src="cat9.jpg"/></div>
+	</div>
+
+</body>
+
+</html>
