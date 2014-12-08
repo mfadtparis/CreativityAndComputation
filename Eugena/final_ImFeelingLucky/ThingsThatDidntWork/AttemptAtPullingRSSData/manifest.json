@@ -1,0 +1,18 @@
+{
+	"manifest_version": 2,
+
+	"name": "RSS Fetcher",
+	"description": "This extension grabs RSS data",
+	"version": "1.0",
+	"homepage_url": "http://www.dailymail.co.uk/tvshowbiz/index.html",
+
+	"permissions": [
+		"http://www.dailymail.co.uk/tvshowbiz/index.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490/*"
+		],
+
+	"browser_action": {
+		"default_icon": "icon19px.png",
+		"default_title": "The Only News You Need",
+		"default_popup": "popup.html"
+	}
+}

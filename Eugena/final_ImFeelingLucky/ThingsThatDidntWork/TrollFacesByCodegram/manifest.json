@@ -1,0 +1,13 @@
+{
+	"manifest_version": 2,
+	"name": "Trollfaces",
+	"version": "0.1.1",
+	"description": "Turns pics to trolls",
+	"content_scripts":[
+	{
+		"matches":["http://www.codegram.com/team*"],
+		"css":["basic.css"],
+		"js": ["jquery.min.js", "contentscript.js"]
+	}
+  ]
+}

@@ -1,0 +1,17 @@
+{
+	"name": "TrollFaces",
+	"version": "0.1.1",
+	"description": "Turning pics into troll faces",
+	"content_scripts":[
+		{
+		// Change 'matches' attribute to load content
+		// script only in pages you want to.
+
+		"matches": ["http://codegram.com/team*"],
+		"css":["basic.css"],
+		"js": ["jquery.min.js", "contentscript.js"]
+
+
+		}
+	]
+}

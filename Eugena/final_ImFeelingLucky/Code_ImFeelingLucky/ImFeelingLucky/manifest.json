@@ -1,0 +1,14 @@
+{
+  "name": "I'm Feeling Lucky",
+  "description": "This extension overrides default new tab and links to random Wikipedia pages.",
+  "version": "1.0",
+  "incognito": "split",
+  "chrome_url_overrides": {
+    "newtab": "newtab-blank02.html"
+  },
+  "browser_action":{
+  	"default_popup":"popup.html"
+},
+  "manifest_version": 2
+
+}

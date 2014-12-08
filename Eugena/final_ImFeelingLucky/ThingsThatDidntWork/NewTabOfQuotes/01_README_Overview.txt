@@ -1,0 +1,1 @@
+This extension was supposed to open a new tab in Google Chrome and run a series of quotes, at random, asking whether the viewer was staying on task in an effort to curb procrastination.
