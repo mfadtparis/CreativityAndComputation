@@ -9,7 +9,7 @@ function setup()
 function draw()
 {
 
-  image(img, 100, 400);
+  image(img, 100, 200);
 
 
 }
