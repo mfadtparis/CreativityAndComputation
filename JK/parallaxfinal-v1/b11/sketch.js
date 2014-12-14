@@ -1,10 +1,10 @@
 var b;
 
 function setup() {
-  createCanvas(800, 419);
+  createCanvas(700, 400);
 
   // specify multiple formats for different browsers
-  b = createVideo(['assets/b11.mp4', 
+  b = createVideo(['assets/b11.mov', 
                    'assets/b11.webm']);
   b.loop();
   b.hide(); 
