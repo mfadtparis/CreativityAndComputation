@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<title>JQuery Madness</title>
+
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script>
+	$(document).ready(function(){
+		$("#p1").mouseenter(function(){
+			alert("Ici. C'est ici.");
+		});
+
+		$("#p2").mouseleave(function(){
+			alert("Mais, non.");	
+		});
+
+	$(document).ready(function(){
+		$("#hide").click(function(){
+			$("p").hide();
+		});
+		$("#show").click(function(){
+			$("p").show();		
+		});
+
+	$(document).ready(function(){
+		$("button").click(function(){
+			$("#div1").fadeIn();
+			$("#div2").fadeIn("slow");
+			$("#div3").fadeIn(3000);
+		});
+		});
+		
+	});
+	});
+</script>
+
+
+
+</head>
+
+
+
+<body>
+	<p id="p1">Ici. Ici. Ici. Ici. Ici. </p>
+	<p id="p2">Pas ici. Pas ici. Pas ici. Pas ici. Pas ici.</p>
+<p>
+<pre>
+LOCAL REPORTER:
+Well, this is it folks.  This is the big 
+day, the historic day on which Willy Wonka has promised to 
+open his gates and shower gifts on the five lucky winners.  
+From all over the globe, people have gathered here waiting 
+for the hour to strike, waiting to catch a glimpse of that 
+legendary magician Mr. Willy Wonka.
+</pre>
+</p>
+	<button id="show">Open</button>
+	<button id="hide">Shut</button>
+
+<div id="div1"></div>
+<div id="div2"></div>
+<div id="div3"></div>
+
+
+</body>
+</html>

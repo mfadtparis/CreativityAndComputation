@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html>
+<head>Mad Fiction</head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+		// hide paragraph at start
+	$("#madlib").hide();
+	$("#button2").hide();
+
+	$("#button").click(function(){
+		// change text in span by id:
+		// 	- get text from the input field using val()
+		var inputText = $("#Input1").val();
+		var inputText2 = $("#Input2").val();
+		var inputText3 = $("#Input3").val();
+		var inputText4 = $("#Input4").val();
+		var inputText5 = $("#Input5").val();
+		var inputText6 = $("#Input6").val();
+		var inputText7 = $("#Input7").val();
+		var inputText8 = $("#Input8").val();
+	
+
+		// 	- set the text in span using text()
+		$("#pluralnoun").text(inputText);
+		$("#noun2").text(inputText2);
+		$("#noun3").text(inputText3);
+		$("#yesnomaybe").text(inputText4);
+		$("#professionpl").text(inputText5);
+		$("#noun6").text(inputText6);
+		$("#noun7").text(inputText7);
+		$("#nut").text(inputText8);
+
+		// show paragraph
+		$("#madlib").show();
+
+		// hide 'click me' button
+		$("#button").hide();
+		
+		// show reset button
+		$("#button2").show();
+
+		// have reset button redirect to original mad lib and re-show 'click me' button
+		$("#button2").click(function(){
+		$("#madlib").hide();
+		$("#button2").hide();
+		$("#button").show();
+		});			
+	});
+});
+</script>
+</head>
+
+<body>
+<br><img src="jim.jpg" width="600">
+
+	<p><input placeHolder="plural noun" id="Input1"></input>
+	<p><input placeHolder="noun" id="Input2"></input></p>
+	<p><input placeHolder="noun" id="Input3"></input></p>
+	<p><input placeHolder="yes, no, maybe" id="Input4"></input></p>
+	<p><input placeHolder="profession (plural)" id="Input5"></input></p>
+	<p><input placeHolder="noun" id="Input6"></input></p>
+	<p><input placeHolder="noun" id="Input7"></input></p>
+	<p><input placeHolder="type of nut" id="Input8"></input></p>
+
+	<button id="button">Click Me</button>
+	<button id="button2">Play Again</button>
+
+
+<pre>
+<p id="madlib">
+MAD FICTION
+
+Jimmie comes over with a handful of <span id="pluralnoun"></span>.
+
+JIMMIE
+Mr. Wolf, you gotta understand 
+somethin'--
+
+THE WOLF
+ -- Winston, Jimmie -- please, Winston.
+
+ JIMMIE
+ You gotta understand something, 
+ Winston. I want to help you guys out 
+ and all, but that's my best <span id="#noun2"></span>. 
+ It was a wedding <span id="#noun3"></span>from my 
+ Uncle Conrad and Aunt Ginny, and 
+ they ain't with us anymore --
+
+ THE WOLF
+ -- let me ask you a question, if you 
+ don't mind?
+
+ JIMMIE
+ <span id="#yesnomaybe"></span>
+
+ THE WOLF
+ Were your Uncle Conrad and Aunt Ginny 
+ millionaires?
+
+ JIMMIE
+ No.
+
+ THE WOLF
+ Well, your Uncle Marsellus is. And 
+ I'm positive if Uncle Conrad and 
+ Aunt Ginny were <span id="#professionpl"></span>, they 
+ would've furnished you with a whole 
+ <span id="#noun6"></span>, which your Uncle 
+ Marsellus is more than happy to do.
+
+(takes out a roll of 
+ bills)
+ I like <span id="#noun7"></span> myself, that's what's in 
+ my bedroom. How 'bout you Jimmie, 
+ you an <span id="#nut"></span> man?
+
+ JIMMIE
+ <span id="#nut"></span>'s nice.
+</p>
+	
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
