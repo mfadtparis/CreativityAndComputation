@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+
+</style>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+
+	//hide the paragraph at start
+	$("#madLib").hide();
+
+	$("#Done").click(function(){
+
+	//change text in span by id:
+
+	// -get the text from the input field using val()
+	var inputText1 = $("#myInput1").val();
+	var inputText2 = $("#myInput2").val();
+	var inputText3 = $("#myInput3").val();
+	// -set the text in the span using text()
+	$("#text1").text(inputText1);
+	$("#text2").text(inputText2);
+	$("#text3").text(inputText3);
+	//show the paragraph
+	$("#madLib").show();
+
+	
+	});
+});
+</script>
+
+</head>
+
+<body>
+	<center>
+	<h1>MAD LIBS</h1>
+	<input placeHolder="adjective" id ="myInput1"></input></p>
+	<input placeHolder="verb ending with ~ing" id ="myInput2"></input></p>
+	<input placeHolder="noun" id ="myInput3"></input></p>
+
+	<button id="Done">Done!</button>
+	
+	<p id="madLib">It was a <span id="text1"></span> Sunday, so Geoffrey was <span id="text2"></span> with his <span id="text3"></span>.
+	</center>
+	</body>
+
+
+	</html>
