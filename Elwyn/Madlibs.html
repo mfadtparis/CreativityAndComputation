@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+
+	//hide the paragraph at start
+	$("#madLib").hide();
+
+	$("#Done").click(function(){
+
+	//change text in span by id:
+
+	// -get the text from the input field using val()
+	var inputText1 = $("#myInput1").val();
+	var inputText2 = $("#myInput2").val();
+	var inputText3 = $("#myInput3").val();
+	var inputText4 = $("#myInput4").val();
+	var inputText5 = $("#myInput5").val();
+	var inputText6 = $("#myInput6").val();
+	var inputText7 = $("#myInput7").val();
+	var inputText8 = $("#myInput8").val();
+	// -set the text in the span using text()
+	$("#text1").text(inputText1);
+	$("#text2").text(inputText2);
+	$("#text3").text(inputText3);
+	$("#text4").text(inputText4);
+	$("#text5").text(inputText5);
+	$("#text6").text(inputText6);
+	$("#text7").text(inputText7);
+	$("#text8").text(inputText8);
+
+
+	//show the paragraph
+	$("#madLib").show();
+	
+	});
+});
+</script>
+
+</head>
+
+<body>
+	<h1>Sunday MadLib</h1>
+	<input placeHolder="adjective" id ="myInput1"></input></p>
+	<input placeHolder="verb ending with ~ing" id ="myInput2"></input></p>
+	<input placeHolder="noun" id ="myInput3"></input></p>
+	<input placeHolder="adjective" id="myInput4"></input></p>
+	<input placeHolder="adjective" id="myInput5"></input></p>
+	<input placeHolder="verb" id="myInput6"></input></p>
+	<input placeHolder="place" id="myInput7"></input></p>
+	<input placeHolder="plural noun" id="myInput8"></input></p>
+
+	<button id="Done">Done</button>
+
+	
+	<p id="madLib">
+		It was a <span id="text1"></span> Sunday, so Geoffrey was <span id="text2"></span> with his <span id="text3"></span>. If it hadn't been for the <span id="text4"></span> Saturday night before, he might have told his <span id="text5"></span> brother that he could <span id="text6"></span> with him that afternoon. But instead he just felt like <span id="text6"></span> with his cat. After all he did have to spend the whole day tomorrow at <span id="text7"></span> making <span id="text8"></span>.
+	
+	</body>
+
+
+	</html>
